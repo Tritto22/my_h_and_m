@@ -26,9 +26,6 @@ a {
     margin: 20px;
 }
 
-.container_header section {
-}
-
 .firstrow::after, .secondrow::after, .shop::after, .firstrow_item, .secondrow_item {
     content: "";
     display: table;
