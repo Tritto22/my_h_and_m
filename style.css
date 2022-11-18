@@ -4,3 +4,65 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.container section {
+    height: 100px;
+    border: 1px solid black;
+}
+
+.firstrow::after, .secondrow::after, .shop::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.shop, .logo, .profile {
+    height: 100px;
+    width: calc(100% / 3);
+    border: 1px solid black;
+    float: left;
+}
+
+.search, .gender {
+    height: 100px;
+    width: calc(100% / 3);
+    border: 1px solid black;
+    float: right;
+}
+
+.shop {
+    background-color: red;
+}
+
+
+
+.logo {
+    background-color: blue;
+}
+
+.profile {
+    background-color: green;
+}
+
+.search {
+    background-color: blueviolet;
+}
+
+.gender {
+    background-color: aqua;
+}
+
+#help, #newsletter, #search_shop, #other {
+    float: left;
+    margin-right: 20px;
+}
+
+#other > i {
+    font-size: 8px;
+}
