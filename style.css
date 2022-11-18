@@ -5,64 +5,104 @@
     font-family: 'Roboto', sans-serif;
 }
 
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .container {
-    height: 200px;
-    border: 1px solid black;
+    height: 100px;
     margin: 20px;
 }
 
 .container section {
-    height: 100px;
-    border: 1px solid black;
+    height: 50px;
 }
 
-.firstrow::after, .secondrow::after, .shop::after {
+.firstrow::after, .secondrow::after, .shop::after, .profile::after, .gender::after {
     content: "";
     display: table;
     clear: both;
 }
 
 .shop, .logo, .profile {
-    height: 100px;
+    height: 50px;
     width: calc(100% / 3);
-    border: 1px solid black;
     float: left;
 }
 
 .search, .gender {
-    height: 100px;
-    width: calc(100% / 3);
-    border: 1px solid black;
+    height: 50px;
     float: right;
 }
 
-.shop {
-    background-color: red;
-}
-
-
-
-.logo {
-    background-color: blue;
-}
-
-.profile {
-    background-color: green;
-}
-
 .search {
-    background-color: blueviolet;
+    width: 25%;
 }
 
 .gender {
-    background-color: aqua;
+    width: 50%;
 }
 
-#help, #newsletter, #search_shop, #other {
+.shop {
+}
+
+.logo {
+    position:relative;
+}
+
+.search {
+    border-bottom: 1px solid black;
+}
+
+.help, .newsletter, .search_shop, .other {
     float: left;
     margin-right: 20px;
 }
 
-#other > i {
+.other > i {
     font-size: 8px;
+}
+
+.logo > img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.sign_in, .whishlist, .cart {
+    float: left;
+    margin-right: 10px;
+}
+
+.profile i {
+    font-size: 25px;
+}
+
+.search > i {
+    font-size: 25px;
+}
+
+.search > input {
+    height: 25px;
+    font-size: 15px;
+    border: none;
+}
+
+.search, .gender {
+    padding: 10px;
+}
+
+.woman, .man, .divided, .baby, .child, .gender > .home, .beauty, .sport, .gift {
+    float: left;
+    margin-right: 20px;
+}
+
+.secondrow {
+    margin: 30px 0px;
 }
