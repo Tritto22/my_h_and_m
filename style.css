@@ -5,6 +5,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
 input:focus {
     outline: none;
 }
@@ -15,44 +23,40 @@ a {
 }
 
 .container_header {
-    height: 100px;
     margin: 20px;
 }
 
 .container_header section {
-    height: 50px;
 }
 
-.firstrow::after, .secondrow::after, .shop::after, .profile::after, .gender::after, .container_main::after {
+.firstrow::after, .secondrow::after, .shop::after, .firstrow_item, .secondrow_item {
     content: "";
     display: table;
     clear: both;
 }
 
 .shop, .logo, .profile {
-    height: 50px;
     width: calc(100% / 3);
     float: left;
 }
 
-.search, .gender {
-    height: 50px;
+.profile {
+    text-align: right;
+}
+
+.gender, .search {
     float: right;
 }
 
 .search {
-    width: 25%;
+    width: 20%;
+    border-bottom: 1px solid black;
 }
 
 .gender {
-    width: 50%;
-}
-
-.shop {
-}
-
-.logo {
-    position:relative;
+    width: 60%;
+    text-align: center;
+    padding: 5px;
 }
 
 .help, .newsletter, .search_shop, .other {
@@ -64,62 +68,67 @@ a {
     font-size: 8px;
 }
 
-.logo > img {
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+.container_img {
+    width: 100px;
+    margin: auto;
 }
 
-.sign_in, .whishlist, .cart {
-    float: left;
-    margin-right: 10px;
+.logo img {
+    width: 100%;
 }
 
 .profile i {
     font-size: 25px;
 }
 
-.search > i {
-    font-size: 25px;
+.content_search {
+    padding: 5px;
 }
 
-.search > input {
-    height: 25px;
-    font-size: 15px;
+.content_search > i {
+    font-size: 20px;
+    position: absolute;
+}
+
+.content_search > input {
     border: none;
+    position: relative;
+    left: 30px;
 }
 
-.woman, .man, .divided, .baby, .child, .gender > .home, .beauty, .sport, .gift {
-    float: left;
+.secondrow {
+    padding: 40px 0;
+}
+
+.gender li {
     margin-right: 20px;
 }
 
+.path {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* css main start */
 
 .container_main {
-    height: 3000px;
     margin: 20px;
     border: 1px solid black;
 }
 
 .left_nav {
-    height: 2000px;
     width: 20%;
-    background-color: blue;
     border: 1px solid black;
     float: left;
 }
 
 .content_main {
-    height: 1000px;
     width: 80%;
-    background-color: rgb(255, 0, 0);
     border: 1px solid black;
     float: left;
 }
 
 .adv, .titol {
-    height: 150px;
     border: 1px solid black;
 }
 
@@ -127,17 +136,9 @@ a {
     background-color: rgb(221, 214, 189);
 }
 
-.titol {
-    background-color: rgb(0, 255, 98);
-}
-
-.container_items {
-    background-color: rgb(255, 0, 247);
-    height: 700px;
-}
-
-.left_nav a {
+.left_nav li {
     display: block;
+    margin-bottom: 10px;
 }
 
 .left_nav h3, .left_nav a {
@@ -163,10 +164,11 @@ a {
 }
 
 .adv .sign_in {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
     margin-top: 10px;
+}
+
+.sign_in{
+    text-align: center;
 }
 
 .adv a {
@@ -196,3 +198,32 @@ h1, .titol a {
 .titol p {
     padding: 20px 0;
 }
+
+/* container_items start */
+
+.firstrow_item {
+    width: 100%;
+}
+
+.item {
+    height: 600px;
+    width: calc(100% / 4);
+    border: 1px solid black;
+    float: left;
+}
+
+.img_item {
+    border: 1px solid black;
+}
+
+.img_item > img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info_item {
+    border: 1px solid black;
+
+}
+
