@@ -97,13 +97,13 @@ a {
 
 
 .container_main {
-    height: 1000px;
+    height: 3000px;
     margin: 20px;
     border: 1px solid black;
 }
 
 .left_nav {
-    height: 800px;
+    height: 2000px;
     width: 20%;
     background-color: blue;
     border: 1px solid black;
@@ -118,24 +118,81 @@ a {
     float: left;
 }
 
-.adv, .titol, .order {
-    height: 100px;
+.adv, .titol {
+    height: 150px;
     border: 1px solid black;
 }
 
 .adv {
-    background-color: aqua;
+    background-color: rgb(221, 214, 189);
 }
 
 .titol {
     background-color: rgb(0, 255, 98);
 }
 
-.order {
-    background-color: rgb(204, 255, 0);
-}
-
 .container_items {
     background-color: rgb(255, 0, 247);
     height: 700px;
+}
+
+.left_nav a {
+    display: block;
+}
+
+.left_nav h3, .left_nav a {
+    margin-bottom: 10px;
+}
+
+.left_nav div {
+    margin-bottom: 20px;
+}
+
+.adv {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.adv h2 {
+    color: red;
+}
+
+.adv p {
+    font-size: 10px;
+}
+
+.adv .sign_in {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+}
+
+.adv a {
+    border: 1px solid black;
+}
+
+.adv h2, .adv p, .adv a {
+    padding: 5px;
+}
+
+.titol {
+    padding: 20px 0;
+}
+
+h1, .titol a {
+    text-transform: uppercase;
+}
+
+.titol a {
+    margin-right: 10px;
+}
+
+.titol i {
+    margin-right: 20px;
+}
+
+.titol p {
+    padding: 20px 0;
 }
