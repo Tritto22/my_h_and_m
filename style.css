@@ -309,6 +309,7 @@ h1, .titol a {
 
 .info_item i {
     font-size: 8px;
+    color: red;
 }
 
 .info_item .type {
